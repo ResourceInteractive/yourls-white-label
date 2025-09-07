@@ -17,7 +17,7 @@ if (!defined('YOURLS_ABSPATH')) {
 // A. GLOBAL CONFIGURATION
 // =============================================================================
 
-define('WL_BRAND_NAME', 'Smul.App');
+define('WL_BRAND_NAME', 'MY BRAND');
 define('WL_LOGO_FILENAME', 'logo.png'); // Place this image in this plugin's folder
 
 
