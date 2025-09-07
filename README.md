@@ -1,3 +1,4 @@
+[![Listed in Awesome YOURLS!](https://img.shields.io/badge/Awesome-YOURLS-C5A3BE)](https://github.com/YOURLS/awesome-yourls/)
 # yourls-white-label
 Plugin for YOURLS that allows you to white label the UI.
 
