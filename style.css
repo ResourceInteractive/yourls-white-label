@@ -1,0 +1,216 @@
+/*
+ * YOURLS White Label Custom Stylesheet
+ * Version 2.0 - Inspired by the "Smul" modern design
+ */
+
+/* 1. Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* 2. Define the Color Palette using CSS Variables */
+:root {
+    --brand-blue: #007bff;
+    --brand-darkblue: #0056b3;
+    --brand-gray: #6c757d;
+    --brand-lightgray: #f8f9fa;
+    --brand-text-dark: #212529;
+    --brand-white: #ffffff;
+    --brand-border: #dee2e6;
+    --brand-error: red;
+}
+
+/* 3. General Body & Typography Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--brand-text-dark);
+    background-color: var(--brand-lightgray); /* Lighter gray background */
+}
+
+a {
+    color: var(--brand-blue);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+a:hover {
+    color: var(--brand-darkblue);
+}
+
+/* 4. Header & Navigation */
+#header {
+    background: var(--brand-white);
+    border-bottom: 1px solid var(--brand-border);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+#admin_menu a, #admin_menu a:link {
+    font-weight: 500;
+    color: var(--brand-text-dark);
+    transition: all 0.2s ease-in-out;
+}
+
+#admin_menu a:hover {
+    background-color: var(--brand-lightgray);
+    color: var(--brand-blue);
+}
+
+#admin_menu_logout_link {
+    color: var(--brand-gray);
+}
+
+/* 5. Login Page Specific Styles */
+body.login {
+    background-color: var(--brand-lightgray);
+}
+
+body.login #login {
+    background: var(--brand-white);
+    border: 1px solid var(--brand-border);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 40px;
+}
+
+/* 6. Buttons & Inputs */
+input.text, input[type=text], input[type=password] {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: 1px solid var(--brand-border);
+    box-shadow: none;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+input.text:focus, input[type=text]:focus, input[type=password]:focus {
+    border-color: var(--brand-blue);
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+input.button, input.submit, input[type="submit"], input[type="button"] {
+    background-color: var(--brand-blue);
+    margin: 10px;
+    color: var(--brand-white);
+    border-radius: 50px; /* Pill shape */
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+input.button:hover, input.submit:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: var(--brand-darkblue);
+    color: var(--brand-white);
+}
+
+.error {
+    color:var(--brand-error);
+    font-weight: 700 !important;
+    line-height: 2em;
+    margin:0px auto;
+    
+}
+/* 7. Main "Add New URL" Form */
+#new_url {
+    background: var(--brand-white);
+    padding: 25px;
+    border: 1px solid var(--brand-border);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+#new_url_form #add-url {
+    font-size: 1.2em;
+    padding: 12px 20px;
+}
+
+/* 8. Main Admin Table */
+#main_table {
+    border: 1px solid var(--brand-border);
+    border-radius: 8px;
+    overflow: hidden; /* To make border-radius apply to the table */
+}
+
+#main_table thead tr {
+    background-color: var(--brand-lightgray);
+}
+
+#main_table th {
+    font-weight: 600;
+    color: var(--brand-text-dark);
+}
+
+#main_table th, #main_table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--brand-border);
+}
+
+#main_table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05); /* Light blue on hover */
+}
+
+#main_table td.actions a.button {
+    padding: 5px 12px;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+/* 9. Footer */
+#footer {
+    color: var(--brand-text-dark);
+    border-top: none;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer p, #footer a {
+    color: var(--brand-text-dark);
+    border: 0px;
+}
+
+#footer a:hover {
+    color: var(--brand-blue);
+}
+
+#login {
+    margin: 0px auto 0px auto !important;
+}
+
+body.login #login {
+    padding: 60px;
+}
+
+#wrap {
+  border-top:var(--brand-gray);
+  border-bottom:var(--brand-gray);
+  border-left:var(--brand-gray);
+  border-right:var(--brand-gray);   
+}
+
+#custom-admin-header {
+    float: right !important;
+}
+
+Input.text, select, textarea {
+    margin: 1px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: 1px solid var(--brand-border);
+    box-shadow: none;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    color: var(--brand-text-dark);
+    background-color: var(--brand-white);
+}
+
+#wrap > h3:nth-child(5) > img {
+ width:15px;   
+}
+
+div.share {
+width: fit-content ! Important;
+padding: 10px;
+    }
+
+#filter_form {
+ max-width: 90%;   
+}
