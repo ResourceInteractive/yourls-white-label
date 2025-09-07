@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: YOURLS White Label
-Plugin URI: https://yourls.org/
+Plugin URI: https://github.com/ResourceInteractive/yourls-white-label
 Description: A complete white-label solution for YOURLS. Customizes the login page, admin header, footer, titles, favicon, and allows for custom CSS.
 Version: 1.0
 Author: Resource Interactive
